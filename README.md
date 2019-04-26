@@ -24,7 +24,7 @@ $ /opt/lampp/uninstall
 $ cd /opt/lampp/phpmyadmin/config.inc.php
 ```
 
-## 1.2 Chang Config
+### 1.2 Chang Config
 ```Unix
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['user'] = 'root';
