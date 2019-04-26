@@ -58,7 +58,7 @@ Then will get an error
 MySQL said: Documentation
 #1045 - Access denied for user 'root'@'localhost' (using password: NO)
  
- Fix error from below - config.inc.php
+Fix error from below - config.inc.php
 ```
 
 # step3 config phpmyadmin
