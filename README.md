@@ -53,7 +53,12 @@ $ /opt/lampp/xampp restart
 ```
 # step3 create root DB from php addmin
 ```Unix
-Select "User Account" --> "Change password" for "root"
+Select "User Account" --> "Change password" for "root" - "localhost"
+Then will get an error
+MySQL said: Documentation
+#1045 - Access denied for user 'root'@'localhost' (using password: NO)
+ 
+ Fix error from below - config.inc.php
 ```
 
 # step3 config phpmyadmin
