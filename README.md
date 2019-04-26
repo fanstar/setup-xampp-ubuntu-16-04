@@ -1,5 +1,5 @@
-
-## Ubuntu 16-04
+# Step1 Setup XAMPP
+# Ubuntu 16-04
 ```Unix
 $ sudo -s
 $ apt update
@@ -18,20 +18,10 @@ $ /opt/lampp/xampp --help
 $ /opt/lampp/uninstall
 ```
 
-# How to config phpmyadmin
-## Step 1 : config -  config.inc.php
-### 1.1 Goto file path
+# step2 Create DB Admin from phpmyadmin
+## Goto phpmyadmin link lie below 
 ```Unix
-$ cd /opt/lampp/phpmyadmin/config.inc.php
-```
-
-### 1.2 Chang Config
-```Unix
-$cfg['Servers'][$i]['auth_type'] = 'cookie';
-$cfg['Servers'][$i]['user'] = 'root';
-$cfg['Servers'][$i]['password'] = '';
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
+https://xx.xx.xx.xx/phpmyadmin/
 ```
 # Fix Error
 Access forbidden!
@@ -41,13 +31,11 @@ Access to the requested object is only available from the local network.
 
 This setting can be configured in the file "httpd-xampp.conf".
 
-
-## Step 2 : config - httpd-xampp.conf
+## config - httpd-xampp.conf
 ### 2.1 Goto file path
 ```Unix
 $ cd /opt/lampp/etc/extra/httpd-xampp.conf
 ```
-
 ### 2.2 Chang Config
 ```Unix
 <Directory "/opt/lampp/phpmyadmin">
@@ -58,8 +46,34 @@ $ cd /opt/lampp/etc/extra/httpd-xampp.conf
     Require all granted
     ErrorDocument 403 /error/XAMPP_FORBIDDEN.html.var
 </Directory>
-
+```
+### 2.3 restart xampp
+```Unix
+$ /opt/lampp/xampp restart
+```
+# step3 create root DB from php addmin
+```Unix
+Select "User Account" --> "Change password" for "root"
 ```
 
+# step3 config phpmyadmin
+## config -  config.inc.php
+### 3.1 Goto file path
+```Unix
+$ cd /opt/lampp/phpmyadmin/config.inc.php
+```
+
+### 3.2 Chang Config
+```Unix
+$cfg['Servers'][$i]['auth_type'] = 'cookie';
+$cfg['Servers'][$i]['user'] = 'root';
+$cfg['Servers'][$i]['password'] = '';
+$cfg['Servers'][$i]['extension'] = 'mysqli';
+$cfg['Servers'][$i]['AllowNoPassword'] = false;
+```
+### 3.3 restart xampp
+```Unix
+$ /opt/lampp/xampp restart
+```
 
 Link Reference: https://linoxide.com/ubuntu-how-to/install-xampp-stack-ubuntu-16-04-terminal/
