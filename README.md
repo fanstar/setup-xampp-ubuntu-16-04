@@ -33,6 +33,14 @@ $cfg['Servers'][$i]['password'] = '';
 $cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 ```
+# Fix Error
+Access forbidden!
+New XAMPP security concept:
+
+Access to the requested object is only available from the local network.
+
+This setting can be configured in the file "httpd-xampp.conf".
+
 
 ## Step 2 : config - httpd-xampp.conf
 ### 2.1 Goto file path
