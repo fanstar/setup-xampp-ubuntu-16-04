@@ -39,7 +39,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
 $ cd /opt/lampp/etc/extra/httpd-xampp.conf
 ```
 
-## 2.2 Chang Config
+### 2.2 Chang Config
 ```Unix
 <Directory "/opt/lampp/phpmyadmin">
     AllowOverride AuthConfig Limit
