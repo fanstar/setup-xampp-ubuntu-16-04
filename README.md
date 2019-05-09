@@ -82,3 +82,6 @@ $ /opt/lampp/xampp restart
 ```
 
 Link Reference: https://linoxide.com/ubuntu-how-to/install-xampp-stack-ubuntu-16-04-terminal/
+
+Auto Set Password:  
+https://medium.com/@icecslox/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%A5%E0%B8%87-xampp-%E0%B8%9A%E0%B8%99-linux-%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99-ssh-e2be52567dc1
