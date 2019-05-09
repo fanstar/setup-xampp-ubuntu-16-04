@@ -89,9 +89,9 @@ https://medium.com/@icecslox/%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%A5%E0%B8
 # How To Import Big Data for mysql in phpmyadmin
 
 ## Make sure you have DB name already
-### create dbname first if you get some error like this
+### Create dbname first if you get some error like this
 ```Unix
-ERROR 1049 (42000): Unknown database '@fx2019'
+ERROR 1049 (42000): Unknown database 'dbnam'
 ```
 
 ## mysql command store in path "/opt/lampp" or "/opt/lampp/bin"
